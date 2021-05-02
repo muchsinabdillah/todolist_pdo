@@ -1,0 +1,19 @@
+<?php
+
+namespace Entity{
+    class TodoList{
+        private $todo;
+
+        public function __construct(string $todo ="")
+        {
+            $this->todo = $todo;
+        }
+        public function getTodo():string {
+            return $this->todo;
+        }
+        public function setTodo($todo):void{
+            $this->todo = $todo;
+        }
+    }
+}
+
